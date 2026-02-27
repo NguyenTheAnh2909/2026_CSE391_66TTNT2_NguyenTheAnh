@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Màu nền nhạt để dễ nhìn form */
+  padding: 40px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto; /* Căn giữa form trên màn hình */
+}
+
+h2 {
+  color: #555;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+/* Định dạng chung cho input và textarea */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #a9a9a9;
+}
+
+input:focus, textarea:focus {
+  border-color: #999;
+}
+
+textarea {
+  resize: vertical; /* Chỉ cho phép kéo giãn chiều dọc */
+}
+
+/* --- ÁP DỤNG FLEXBOX --- */
+
+/* Hàng chứa 2 input đầu tiên */
+.flex-row {
+  display: flex;
+  gap: 20px; /* Khoảng cách giữa 2 ô input */
+}
+
+/* Đảm bảo 2 ô input chia đều không gian */
+.flex-row input {
+  flex: 1; 
+}
+
+/* Hàng cuối chứa nút bấm và ghi chú */
+.form-footer {
+  display: flex;
+  justify-content: space-between; /* Đẩy nút sang trái, chữ sang phải */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+/* Nút bấm */
+.form-footer button {
+  background-color: #79c5ef; /* Màu xanh nước biển nhạt */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-footer button:hover {
+  background-color: #5ab1e3;
+}
+
+.form-footer .note {
+  color: #888;
+  font-size: 0.9rem;
+}
