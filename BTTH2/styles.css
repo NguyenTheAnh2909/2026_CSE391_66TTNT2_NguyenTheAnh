@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px; /* Đẩy nội dung vào trong 50px để không dính mép màn hình */
+    display: flex;
+    justify-content: space-between; /* Tách logo sang trái, menu sang phải */
+    align-items: center;
+    z-index: 10;
+}
+#page-logo a {
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+    color: rgb(255, 251, 184);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+  color: rgb(255, 251, 184);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+#hero {
+  background-image: url('images/places/ocean.jpg'); 
+  background-color: #5bc0de; 
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-content {
+    background-color: rgba(50, 50, 50, 0.8); /* Nền tối mờ */
+  padding: 40px 60px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+#hero-content h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+}
+#hero-content p {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin: 0 0 24px 0;
+}
+
+#hero-content a {
+  display: inline-block;
+  color: white;
+  background-color: #d7cd00;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+#hero-content a:hover {
+  background-color: #f4ff7e;
+}
+#highlights {
+    background-color: #acfff4;
+    padding: 50px 20px;
+    text-align: center;
+}
+#highlights h2 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+#destinations {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.destination img {
+  width: 470px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}   
+.destination p {
+  font-size: 1.3rem;
+  margin: 0;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+.destination strong {
+  color: #00ac7e;
+}
+footer {
+  background-color: #222f3e; 
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+footer img {
+  width: 32px;
+  height: 32px; 
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
